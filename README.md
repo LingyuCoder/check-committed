@@ -9,7 +9,7 @@
 [![License](http://img.shields.io/npm/l/check-committed.svg?style=flat-square)](LICENSE)
 [![npm download](https://img.shields.io/npm/dm/check-committed.svg?style=flat-square)](https://npmjs.org/package/check-committed)
 
-Check whether all changes have been committed
+> Check whether all changes have been committed
 
 ## Installation
 
