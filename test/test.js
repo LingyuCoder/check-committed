@@ -13,13 +13,13 @@ describe('check-committed', () => {
     fs.writeFileSync(path.join(__dirname, 'change'), 'test', 'utf-8');
     return checker().should.be.fulfilledWith({
       success: false,
-      message: ` M test/change\n`
+      detail: ` M test/change\n`
     });
   });
   it('should resolve object with success true no uncommitted changes', () => {
     return checker(process.cwd()).should.be.fulfilledWith({
       success: true,
-      message: ''
+      detail: ''
     });
   });
   it('should reject when error', () => {

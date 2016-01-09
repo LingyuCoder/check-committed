@@ -13,7 +13,7 @@ module.exports = co.wrap(function*(cwd) {
     }).toString();
     return {
       success: !RE_COMMITTED.test(cmdRst),
-      message: cmdRst
+      detail: cmdRst
     };
   } catch (e) {
     if (e.message.indexOf('Not a git repository') !== -1)
