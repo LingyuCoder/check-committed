@@ -1,0 +1,32 @@
+{
+  "name": "check-committed",
+  "version": "0.0.1",
+  "description": "Check whether all changes have been committed",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test ./node_modules/.bin/_mocha --require should --reporter spec",
+    "test-cov": "NODE_ENV=test node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --require should",
+    "test-travis": "NODE_ENV=test node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- --require should"
+  },
+  "author": "LingyuCoder",
+  "license": "MIT",
+  "devDependencies": {
+    "istanbul": "~0.4.0",
+    "mocha": "~2.3.3",
+    "should": "^8.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LingyuCoder/check-committed"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/LingyuCoder/check-committed/issues"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "co": "^4.6.0"
+  }
+}
