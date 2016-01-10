@@ -14,7 +14,7 @@ describe('check-committed', () => {
     return checker().should.be.fulfilledWith({
       success: false,
       detail: [{
-        mode: 'M',
+        code: 'M',
         file: 'test/change'
       }]
     });

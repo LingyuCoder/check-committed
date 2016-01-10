@@ -17,7 +17,7 @@ module.exports = co.wrap(function*(cwd) {
         if (!matchRst) return null;
         let file = matchRst[2].split('->').map(v => v.trim());
         let rst = {
-          mode: matchRst[1],
+          code: matchRst[1],
           file: file[0]
         };
         if (file[1]) rst.dist = file[1];

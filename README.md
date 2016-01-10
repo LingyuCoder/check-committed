@@ -23,6 +23,19 @@ $ npm install --save check-committed
 const checker = require('check-committed');
 checker('/Users/xxx/project_dir') // default process.cwd()
   .then(result => {
+    /*
+    result = {
+      // check result
+      success: true|false
+      // uncommitted file list
+      detail: [{
+        // status code
+        code: 'M',
+         // file path
+        path: 'test/change'
+      }, ...]
+    }
+    */
     if(result.success) {
       console.log('Passed');
     } else {
