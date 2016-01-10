@@ -15,7 +15,7 @@ describe('check-committed', () => {
       success: false,
       detail: [{
         mode: 'M',
-        file: ''
+        file: 'test/change'
       }]
     });
   });
