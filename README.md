@@ -31,8 +31,10 @@ checker('/Users/xxx/project_dir') // default process.cwd()
       detail: [{
         // status code
         code: 'M',
-         // file path
-        path: 'test/change'
+        // file path
+        path: 'test/change',
+        // dist file path if renamed
+        dist: 'test/changed'
       }, ...]
     }
     */
